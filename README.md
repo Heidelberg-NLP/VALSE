@@ -12,7 +12,7 @@ Please find the data in the `data` folder. The dataset is in `json` format and c
     * The subentry `foil` counts how many of the three annotators chose the foil to be (also) describing the image.
     * For more information, see subsec. 4.4 and App. E of the [paper](https://arxiv.org/abs/2112.07566).
 
-:bangbang: Please be aware that the jsons are containing both valid (validated by annotators) and not validated samples. To work only with the **valid set**, please consider filtering them:
+:bangbang: Please be aware that the jsons are containing both valid (meaning: validated by annotators) and non-validated samples. In order to work only with the **valid set**, please consider filtering them:
 
 > We consider a **valid foil** to be at least two out of three annotators identified the caption, but not the foil, as the text which accurately describes the image.
 
