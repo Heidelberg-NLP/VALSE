@@ -3,7 +3,7 @@
 :dancer: VALSE: A Task-Independent Benchmark for Vision and Language Models Centered on Linguistic Phenomena. https://arxiv.org/abs/2112.07566
 
 ## Data Instructions
-Please find the data in the `data` folder. The dataset is in `json` format and containing the following relevant fields:
+Please find the data in the `data` folder. The dataset is in `json` format and contains the following relevant fields:
 * A reference to the image in the original dataset: `dataset` and `image_file`.
 * The valid sentence, the caption for VALSE: `caption`.
 * The altered caption, the `foil`.
