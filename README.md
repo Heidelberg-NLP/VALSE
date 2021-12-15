@@ -14,7 +14,7 @@ Please find the data in the `data` folder. The dataset is in `json` format and c
 
 :bangbang: Please be aware that the jsons are containing both valid (meaning: validated by annotators) and non-validated samples. In order to work only with the **valid set**, please consider filtering them:
 
-> We consider a **valid foil** to be at least two out of three annotators identified the caption, but not the foil, as the text which accurately describes the image.
+> We consider a **valid foil** to mean: at least two out of three annotators identified the caption, but not the foil, as the text which accurately describes the image.
 
 This means that the valid samples of the dataset are the ones where `sample["mturk"]["caption"] >= 2`.
 
