@@ -2,6 +2,8 @@
 
 :dancer: VALSE: A Task-Independent Benchmark for Vision and Language Models Centered on Linguistic Phenomena. https://arxiv.org/abs/2112.07566
 
+📰 News: Accepted at ACL 2022 Main.
+
 ## Data Instructions
 Please find the data in the `data` folder. The dataset is in `json` format and contains the following relevant fields:
 * A reference to the image in the original dataset: `dataset` and `image_file`.
