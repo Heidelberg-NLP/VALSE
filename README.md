@@ -1,6 +1,6 @@
 # VALSE :dancer:
 
-:dancer: VALSE: A Task-Independent Benchmark for Vision and Language Models Centered on Linguistic Phenomena. https://arxiv.org/abs/2112.07566
+:dancer: VALSE: A Task-Independent Benchmark for Vision and Language Models Centered on Linguistic Phenomena. https://aclanthology.org/2022.acl-long.567/
 
 📰 News: Accepted at ACL 2022 Main.
 
@@ -12,7 +12,7 @@ Please find the data in the `data` folder. The dataset is in `json` format and c
 * The annotator's votes (3 annotators per sample): `mturk`.
     * The subentry `caption` counts the number of annotators who chose the caption, but/and not the foil, to be the one describing the image.
     * The subentry `foil` counts how many of the three annotators chose the foil to be (also) describing the image.
-    * For more information, see subsec. 4.4 and App. E of the [paper](https://arxiv.org/abs/2112.07566).
+    * For more information, see subsec. 4.4 and App. E of the [paper](https://aclanthology.org/2022.acl-long.567/).
 
 :bangbang: Please be aware that the jsons are containing both valid (meaning: validated by annotators) and non-validated samples. In order to work only with the **valid set**, please consider filtering them:
 
@@ -46,15 +46,24 @@ Example instance:
 For the images, please follow the downloading instructions of the respective original dataset. The provenance of the original images is mentioned in the json files in the field `dataset`.
 
 ## Reference
-Please cite our [:dancer: VALSE paper](https://arxiv.org/abs/2112.07566) if you are using this dataset.
+Please cite our [:dancer: VALSE paper](https://aclanthology.org/2022.acl-long.567/) if you are using this dataset.
 
 ```
-@misc{parcalabescu2021valse,
-      title={VALSE: A Task-Independent Benchmark for Vision and Language Models Centered on Linguistic Phenomena}, 
-      author={Letitia Parcalabescu and Michele Cafagna and Lilitta Muradjan and Anette Frank and Iacer Calixto and Albert Gatt},
-      year={2021},
-      eprint={2112.07566},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{parcalabescu-etal-2022-valse,
+    title = "{VALSE}: A Task-Independent Benchmark for Vision and Language Models Centered on Linguistic Phenomena",
+    author = "Parcalabescu, Letitia  and
+      Cafagna, Michele  and
+      Muradjan, Lilitta  and
+      Frank, Anette  and
+      Calixto, Iacer  and
+      Gatt, Albert",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.567",
+    pages = "8253--8280",
+    abstract = "We propose VALSE (Vision And Language Structured Evaluation), a novel benchmark designed for testing general-purpose pretrained vision and language (V{\&}L) models for their visio-linguistic grounding capabilities on specific linguistic phenomena. VALSE offers a suite of six tests covering various linguistic constructs. Solving these requires models to ground linguistic phenomena in the visual modality, allowing more fine-grained evaluations than hitherto possible. We build VALSE using methods that support the construction of valid foils, and report results from evaluating five widely-used V{\&}L models. Our experiments suggest that current models have considerable difficulty addressing most phenomena. Hence, we expect VALSE to serve as an important benchmark to measure future progress of pretrained V{\&}L models from a linguistic perspective, complementing the canonical task-centred V{\&}L evaluations.",
 }
 ```
