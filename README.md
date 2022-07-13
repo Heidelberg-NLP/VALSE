@@ -24,20 +24,20 @@ Example instance:
 ```python
 {
     "actions_test_0": {
-        "dataset": "SWiG",
+        "dataset": "SWiG",                        # dataset from where the image and caption originate from
         "original_split": "test",                 # the split of the original dataset in which the sample belonged to
         "dataset_idx": "exercising_255.jpg",      # the sample id in the original dataset
         "linguistic_phenomena": "actions",        # the linguistic phenomenon targeted
-        "image_file": "exercising_255.jpg",
-        "caption": "A man exercises his torso.",
+        "image_file": "exercising_255.jpg",       # the image filename (in the original dataset)
+        "caption": "A man exercises his torso.",  # image caption
         "classes": "man",                         # the word of the caption that was replaced
         "classes_foil": "torso",                  # the foil word / phrase
-        "mturk": {
-            "foil": 0,
-            "caption": 3,
+        "mturk": {                                # Amazon Mechanical Turk annotation (validation) results
+            "foil": 0,                            # how many annotators voted that the foil describes the image
+            "caption": 3,                         # how many annotators voted that the caption only (and not the foil) to describe the image
             "other": 0
         },
-        "foil": "A torso exercises for a man."
+        "foil": "A torso exercises for a man."    # foil where one word / phrase is exchanged in the original caption such that the foil caption does not describe the image anymore
     }, ...
 }
 ```
