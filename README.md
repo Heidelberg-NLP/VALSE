@@ -4,6 +4,11 @@
 
 📰 News: Accepted at ACL 2022 Main.
 
+## Papers with Code entries for capturing future results on the benchmark
+* Paper: https://paperswithcode.com/paper/valse-a-task-independent-benchmark-for-vision-1
+* Dataset: https://paperswithcode.com/dataset/valse
+   * We encourage the community to **submit their results** there to keep track of the progress on this benchmark. Disclaimer: Since we often cannot run models produced by the community, we have to trust the results reported by the respective model authors.
+
 ## Data Instructions
 Please find the data in the `data` folder. The dataset is in `json` format and contains the following relevant fields:
 * A reference to the image in the original dataset: `dataset` and `image_file`.
@@ -45,7 +50,7 @@ Example instance:
 ## Images
 For the images, please follow the downloading instructions of the respective original dataset. The provenance of the original images is mentioned in the json files in the field `dataset`.
 
-## Reference
+# Reference
 Please cite our [:dancer: VALSE paper](https://aclanthology.org/2022.acl-long.567/) if you are using this dataset.
 
 ```
