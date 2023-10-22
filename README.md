@@ -2,7 +2,7 @@
 
 :dancer: VALSE: A Task-Independent Benchmark for Vision and Language Models Centered on Linguistic Phenomena. https://aclanthology.org/2022.acl-long.567/
 
-📰 News: Accepted at ACL 2022 Main.
+📰 News: Accepted at ACL 2022 Main Conference.
 
 ## Papers with Code entries for capturing future results on the benchmark
 * Paper: https://paperswithcode.com/paper/valse-a-task-independent-benchmark-for-vision-1
