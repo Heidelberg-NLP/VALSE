@@ -63,28 +63,25 @@ for instrument, foils_path in DATA.items():
 
         if caption_fits >= 2:  # MTURK filtering!
 
-            # foil[f"detected_by_{which}"] = [0] * len(foil['foils'])
-            for k, chosen_foil in enumerate(foil['foils']):
-                test_sentences = [foil['caption'], chosen_foil]
-                stride = 3
-                max_length = model.config.n_positions
+            test_sentences = [foil["caption"], foil["foil"]]
+            stride = 3
+            max_length = model.config.n_positions
 
-                ppls = []
+            ppls = []
 
-                for i, test_sentence in enumerate(test_sentences):
-                    ppl = compute_ppl(test_sentence).to('cpu')
-                    ppls.append(ppl)
+            for i, test_sentence in enumerate(test_sentences):
+                ppl = compute_ppl(test_sentence).to('cpu')
+                ppls.append(ppl)
 
-                    if i == 0:
-                        ppl_correct.append(ppl)
-                    else:
-                        ppl_foils.append(ppl)
+                if i == 0:
+                    ppl_correct.append(ppl)
+                else:
+                    ppl_foils.append(ppl)
 
-                if ppls[0] < ppls[1]:  # ppl smaller is better
-                    foil_detected += 1
-                    foil[f"detected_by_{which}"][k] = 1
+            if ppls[0] < ppls[1]:  # ppl smaller is better
+                foil_detected += 1
 
-                count += 1
+            count += 1
 
     print(f'{instrument}: {which} could detect {foil_detected / count * 100:.2f}% of foils (pairwise).')
     print(f'The average perplexity for correct sentences is {np.mean(ppl_correct)} and for foils is {np.mean(ppl_foils)}.')

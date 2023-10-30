@@ -34,7 +34,7 @@ for instrument, foil_info in DATA.items():
         if caption_fits >= 2:  # valid examples only (validated by mturkers)
 
             test_img_path = os.path.join(images_path, foil["image_file"])
-            test_sentences = [foil["caption"][0], foil["foil"]]
+            test_sentences = [foil["caption"], foil["foil"]]
 
             # run frcnn
             images, sizes, scales_yx = image_preprocess(test_img_path)
