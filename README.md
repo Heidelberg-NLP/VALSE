@@ -53,7 +53,7 @@ For the images, please follow the downloading instructions of the respective ori
 # Reference
 Please cite our [:dancer: VALSE paper](https://aclanthology.org/2022.acl-long.567/) if you are using this dataset.
 
-```
+```bibtex
 @inproceedings{parcalabescu-etal-2022-valse,
     title = "{VALSE}: A Task-Independent Benchmark for Vision and Language Models Centered on Linguistic Phenomena",
     author = "Parcalabescu, Letitia  and
