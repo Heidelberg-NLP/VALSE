@@ -81,7 +81,7 @@ for instrument, foil_info in DATA.items():
 
             foil['lxmert'] = {'caption': 0, 'foil': 0} # 0 is not detected, 1 is detected
             foil['lxmert']['caption'] = output[0, 1].item() # probability of fitting should be close to 1 for captions
-            foil['lxmert']['foil'] = output[1, 0].item() # probability of fitting, should be close to 0 for foils
+            foil['lxmert']['foil'] = output[1, 1].item() # probability of fitting, should be close to 0 for foils
 
             if cross_score[1, 0] == cross_score[1, 1]:  # then something is wrong with the tokenisation
                 print(cross_score, test_sentences, inputs.input_ids)
